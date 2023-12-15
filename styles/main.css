@@ -16,13 +16,16 @@ header {
     align-items: center;
     justify-content: space-between;
     padding-top: 26px;
-    padding-bottom: 25px;
+    padding-bottom: 23px;
 }
 .header-nav {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
     list-style-type: none;
     padding-left: 0;
     gap: 46px;
+    padding-top: 1px;
+    padding-right: 98px;
 }
 .header-logo {
     display: block;
@@ -124,8 +127,8 @@ header {
 .title {
     font-weight: 700;
     font-size: 79px;
-    margin-top: 17px;
-    margin-bottom: 20px;
+    margin-top: 19px;
+    margin-bottom: 18px;
 }
 .description {
     font-family: 'Open Sans', sans-serif;
