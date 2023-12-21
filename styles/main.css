@@ -49,6 +49,7 @@ header {
     color: #443737;
     font-size: 20px;
     text-decoration: none;
+    transition: 0.2s;
 }
 .header-nav a::after {
     content: '';
@@ -152,7 +153,7 @@ header {
     height: 438px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 103px;
+    margin-bottom: 80px;
 }
 .banner-box {
     padding-top: 100px;
@@ -206,10 +207,14 @@ h2 span {
     text-decoration: none;
     margin-top: 150px;
     border: 1px solid #FBB731;
+    transition: 0.2s;
 }
 .banner-link:hover {
     background-color: transparent;
     color: #FBB731;
+}
+.menu {
+    padding-top: 20px;
 }
 .menu-header {
     display: flex;
@@ -286,6 +291,7 @@ h2 span {
     border-radius: 5px;
     gap: 5px;
     border: none;
+    transition: 0.2s;
 }
 .menu-grid-btn:hover {
     background:#F37335;
@@ -340,6 +346,7 @@ h2 span {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
+    transition: 0.2s;
 }
 .footer-list a:hover {
     color: #FBB731
@@ -370,7 +377,30 @@ h2 span {
     margin: 0;
     list-style-type: none;
 }
-
+.button-up {
+    background-color: #FBB731;
+    color: #1E2F40;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 5px 20px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    transition: 1s;
+}
+.button-up:hover {
+    background: #F37335;
+    cursor: pointer;
+}
+.button-up.hidden {
+    opacity: 0;
+}
+.button-up.visible {
+    opacity: 1;
+}
 /* Style Index */
 
 * {
