@@ -14,6 +14,9 @@
     <header id="headerTop">
         <div class="container">
             <div class="header">
+                <div class="header-burger">
+                    <button class="burger" onclick="openModal()"></button>
+                </div>
                 <div class="header-item">
                     <a href="index.html" class="header-logo"></a>
                     <nav>
@@ -157,6 +160,8 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <section class="menu">
             <div class="container">
                 <div class="menu-header">
                     <h2 class="menu-title">
@@ -199,7 +204,7 @@
                     </div>
                 </div>
             </div>
-        </section>   
+        </section>    
     </main>
     <footer class="footer">
         <div class="container">
@@ -239,8 +244,25 @@
                             <a href="tel:+79007001414">+ 7 900 700 14-14</a>
                         </li>
                     </ul>
+                </div>
             </div>
-        </div>
+            <div class="modal" id="modal">
+                <ul class="header-nav">
+                    <li>
+                        <a href="index.html">Главная</a>
+                    </li>
+                    <li>
+                        <a href="#" class="active">Меню</a>
+                    </li>
+                    <li>
+                        <a href="#">О нас</a>
+                    </li>
+                    <li>
+                        <a href="#">Контакты</a>
+                    </li>
+                </ul>
+                <button class="burger-close" onclick="closeModal()"></button>
+            </div>
         </div>
     </footer>
     <a href="#headerTop" class="button-up hidden" id="btnUp">Наверх</a>
@@ -262,7 +284,7 @@
        });
        }
 
-    // Button Up
+       // Button Up
 
        window.onscroll = function(){scrollFunction()};
 
@@ -287,6 +309,16 @@
            } else {
                document.getElementById('btnUp').className = 'button-up hidden';
            }
+       }
+       
+       // Menu
+
+       function openModal() {
+           document.getElementById("modal").style.top = "0px";
+       }
+
+       function closeModal() {
+           document.getElementById("modal").style.top = "-400px";
        }
     </script>   
 </body>
