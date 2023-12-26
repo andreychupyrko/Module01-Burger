@@ -232,7 +232,9 @@ h2 span {
     border-radius: 22px;
     color: #443737;
     font-size: 15px;
-    appearance: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
     flex-basis: 279px;
     background-image: url(../images/arrow.svg);
     background-size: 12.79px 7.75px;
@@ -243,14 +245,16 @@ h2 span {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 50px;
-    column-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
     margin-bottom: 103px;
 }
 .menu-grid-extra {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 50px;
-    column-gap: 20px;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
     margin-bottom: 103px;
 }
 .menu-grid-title {
@@ -280,7 +284,8 @@ h2 span {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 430px;
 }
